@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <title>
+        {% block title %}
+            Мой сайт
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="container-fluid">
+    {% block content %}
+        Страница не заполнена
+    {% endblock %}
+
+</div>
+<script src="{{ url_for('static', filename='/static/js/bootstrap.js') }}"></script>
+</body>
+</html>

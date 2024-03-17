@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+<ul class="nav nav-pills justify-content-start align-items-end">
+    <li class="nav-item">
+        <a href="/" class="nav-link">Вернуться</a>
+    </li>
+</ul>
+
+<h2 class="text-monospace">Приветствую тебя {{ name }}</h2>
+<form action="/logout/" method="post">
+    <input type="submit" value="Выйти">
+</form>
+
+{% endblock %}

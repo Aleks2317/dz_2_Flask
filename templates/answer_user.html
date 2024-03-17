@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+<h2 class="text-monospace">Введите имя и адрес электронной почты:</h2>
+<form action="/answer_user/" method="post">
+    <input type="text" name="name" placeholder="Имя">
+    <input type="text" name="email" placeholder="Почта">
+    <input type="submit" value="Отправить">
+</form>
+
+{% endblock %}
